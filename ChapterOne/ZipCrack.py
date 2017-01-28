@@ -25,7 +25,7 @@ def extractfile(zFile,password):
 
 def main():
     #添加可选参数
-    parser = optparse.OptionParser("Usage  -f <zipfile> -d <dictionary>")    
+    parser = optparse.OptionParser("Usage -f <zipfile> -d <dictionary>")    
     parser.add_option('-f',dest='zname',type='string',help='specify zip file')
     parser.add_option('-d',dest='dname',type='string',help='specify dictionary file')
     (options,args) = parser.parse_args()
