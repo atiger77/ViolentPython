@@ -6,7 +6,7 @@ Author:
 / _ `/ __/ / _ `/ -_) __// / / /
 \_,_/\__/_/\_, /\__/_/  /_/ /_/
           /___/
-Date:20170129
+Date:20170131
 Desc:使用pxssh模块暴力破解SSH服务登录密码
 
 '''
@@ -14,9 +14,13 @@ Desc:使用pxssh模块暴力破解SSH服务登录密码
 from pexpect import pxssh
 import optparse,time,threading
 
+#设置最大连接数
 maxConnections = 5
+#设置计数线程同步的数值
 connection_lock = threading.BoundedSemaphore(value=maxConnections)
+#设置默认匹配情况
 Found = False
+#设置默认失败数
 Fails = 0
 
 def connect(host,user,password,release):
