@@ -9,4 +9,7 @@
 | Chap 2   | TcpFullScan   | TCP全连接端口扫描器，扫描指定IP下指定端口     |
 | Chap 2   | NMAPPortScann | NMAP扫描器，扫描指定IP下指定端口              |
 | Chap 2   | sshBrute      | 爆破ssh密码程序                               |
+| Chap 2   | botNet        | 批量操作ssh肉鸡服务器                         |
+
+
 
